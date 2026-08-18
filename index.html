@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRẦN TIẾN ĐẠT - Bio Links</title>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600;700&family=Nunito:wght@400;700;800&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Nunito', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* Lấy ảnh background.png cùng thư mục trên GitHub */
+            background: url('background.png') no-repeat center center fixed;
+            background-size: cover;
+            padding: 20px;
+        }
+
+        /* Khung chứa chính (Hiệu ứng kính mờ Glassmorphism) */
+        .card-container {
+            background: rgba(255, 255, 255, 0.88);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-radius: 28px;
+            padding: 40px 30px;
+            width: 100%;
+            max-width: 420px;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3),
+                        0 0 20px rgba(255, 255, 255, 0.5);
+            border: 2px solid rgba(255, 255, 255, 0.9);
+            position: relative;
+        }
+
+        /* Khung chứa Avatar */
+        .avatar-wrapper {
+            position: relative;
+            width: 170px;
+            height: 170px;
+            margin: 0 auto 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .avatar {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            filter: drop-shadow(0px 8px 15px rgba(235, 47, 91, 0.3));
+        }
+
+        /* Phần chữ xin chào & Tên cá nhân */
+        .greeting {
+            font-size: 1.1rem;
+            color: #636e72;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .name-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            margin-bottom: 6px;
+        }
+
+        .name {
+            font-family: 'Poppins', 'Nunito', sans-serif;
+            font-size: 1.75rem;
+            font-weight: 800;
+            color: #1e272e;
+            letter-spacing: 0.5px;
+        }
+
+        .verified-badge {
+            color: #1da1f2;
+            font-size: 1.3rem;
+        }
+
+        .subtitle {
+            font-size: 1.05rem;
+            color: #636e72;
+            font-weight: 600;
+            margin-bottom: 25px;
+        }
+
+        .subtitle span {
+            color: #8c7ae6;
+            font-weight: 700;
+        }
+
+        /* Danh sách nút Liên kết MXH */
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .social-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            padding: 14px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1rem;
+            color: #fff;
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .social-btn:hover {
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 8px 22px rgba(0,0,0,0.25);
+        }
+
+        /* Màu sắc các nút mạng xã hội */
+        .facebook {
+            background: linear-gradient(45deg, #1877f2, #00c6ff);
+        }
+
+        .zalo {
+            background: linear-gradient(45deg, #0068ff, #00b4d8);
+        }
+
+        .tiktok {
+            background: linear-gradient(45deg, #111111, #fe2c55);
+        }
+
+        .social-btn i {
+            font-size: 1.3rem;
+        }
+
+        /* Chân trang */
+        .footer {
+            margin-top: 25px;
+            font-size: 0.85rem;
+            color: #718093;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card-container">
+        <div class="avatar-wrapper">
+            <img class="avatar" src="avatar.png" alt="TRẦN TIẾN ĐẠT Avatar">
+        </div>
+
+        <p class="greeting">Hi, i am</p>
+        <div class="name-container">
+            <h1 class="name">TRẦN TIẾN ĐẠT</h1>
+            <i class="fa-solid fa-circle-check verified-badge"></i>
+        </div>
+        <p class="subtitle">and I'm a <span>Designer.</span></p>
+
+        <div class="links-container">
+            <a href="https://www.facebook.com/profile.php?id=100054641812868&mibextid=wwXIfr&rdid=T4Blp5yOjAHDGpvJ&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F199mZWNBDr%2F%3Fmibextid%3DwwXIfr" target="_blank" class="social-btn facebook">
+                <i class="fa-brands fa-facebook-f"></i> Facebook
+            </a>
+
+            <a href="https://zalo.me/0392998614" target="_blank" class="social-btn zalo">
+                <i class="fa-solid fa-comment-dots"></i> Zalo Me
+            </a>
+
+            <a href="https://www.tiktok.com/@trantiendatt.official?_r=1&_d=secCgYIASAHKAESPgo8SZ9S5iL2x1mDfPD1MOzNn9kxVIKh%2BpLReHbSRxbUbmt6pKyLI39y6vzrJVW36RjtyFr74uYn0KZap6MgGgA%3D&_svg=1&checksum=9e6fd1e4b33d7f92f7d32b183c92a4649adef8416cef8e2670ce43322959af4c&item_author_type=1&panel_source_v2=share_panel&reflow_sign_scene=7&rgssign=8.1.iMZ8kvdMIitFIgUiGLKO_g&sec_uid=MS4wLjABAAAA5XNeD2KOe4ZakJCSNh6fCqZhjleOM2yWveUR3H6buVfc1c2Kkpgs8OK3yknLlfdp&sec_user_id=MS4wLjABAAAA5XNeD2KOe4ZakJCSNh6fCqZhjleOM2yWveUR3H6buVfc1c2Kkpgs8OK3yknLlfdp&share_app_id=1180&share_author_id=7162510641571628033&share_enter_from=personal_homepage&share_link_id=99F56044-C845-46EC-AC68-266F1A546F3F&share_region=VN&share_scene=1&sharer_language=vi&social_share_type=5&source=h5_t&timestamp=1787018038&tt_from=copy&u_code=e4j5i1hc94dkj8&ug_btm=b8727%2Cb0&user_id=7162510641571628033&utm_campaign=client_share&utm_medium=ios&utm_source=copy" target="_blank" class="social-btn tiktok">
+                <i class="fa-brands fa-tiktok"></i> TikTok
+            </a>
+        </div>
+
+        <div class="footer">
+            ✨ Designed for TRẦN TIẾN ĐẠT ✨
+        </div>
+    </div>
+
+</body>
+</html>
